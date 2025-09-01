@@ -10,6 +10,7 @@ body {
   font-size: clamp(14px, 1.2vw, 18px);
   line-height: 1.6;
   background: #fff;
+  min-height: 20000px;
 }
 a {
   text-decoration: none;
@@ -176,4 +177,13 @@ a {
     height: auto;
     padding: 4rem 1rem;
   }
+  .about-section h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.nvc {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
 }
