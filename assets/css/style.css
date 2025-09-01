@@ -18,6 +18,7 @@ a {
 
 /* Top Bar */
 .wadah {
+<<<<<<< HEAD
   border-bottom: 1px solid #ddd;
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +29,14 @@ a {
 }
 .follow i {
   margin-left: 0.5rem;
+=======
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vh 10vw;
+    font-size: 1em;
+>>>>>>> 0fc6125f77212ca29bd3d943baa105efbbac1b5f
 }
 
 /* Navbar */
