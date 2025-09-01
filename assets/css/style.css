@@ -46,6 +46,48 @@ a {
   height: 50px;
 }
 
+/* Navbar Links Animasi */
+.navigasi a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+/* garis bawah animasi */
+.navigasi a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* hover efek */
+.navigasi a:hover {
+  background: #007bff;
+  color: #fff;
+}
+.navigasi a:hover::after {
+  width: 60%;
+}
+
+/* aktif (halaman yang sedang dibuka) */
+.navigasi a.active {
+  background: #007bff;
+  color: #fff;
+}
+.navigasi a.active::after {
+  width: 60%;
+}
+
 
 .logo-nav img {
   width: 35px;           /* sebelumnya 90px */
