@@ -1,217 +1,179 @@
+/* Reset & Global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    font-family: 'Montserrat';
-    color: #333;
-    min-height: 20000px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.6;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Top Bar */
 .wadah {
-    border-bottom: 1px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5vh 10vw;
-    font-size: 1em;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.8rem 10vw;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+.follow i {
+  margin-left: 0.5rem;
 }
 
-/* navbar */
+/* Navbar */
+/* Navbar */
 .navbar {
-    border-bottom: 1px solid #333;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 10%;
-    background-color: 	#ffffff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+  border-bottom: 1px solid #eee;
+  padding: 0.4rem 10vw;   /* samakan dengan .wadah */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: 50px;
 }
 
-.navbar .logo-nav img{
-    width: 2.5vw;
+
+.logo-nav img {
+  width: 35px;           /* sebelumnya 90px */
+  height: auto;
 }
 
-.navbar .logo-nav span {
-    color: #252669;
+.navigasi {
+  display: flex;
+  gap: 1rem;             /* lebih rapat */
 }
 
-.navbar .navigasi a {
-    color: 	#000000;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 8rem;
-}
-
-.navbar .navigasi a:hover {
-    color: #000000;
-}
-
-.navbar .navigasi a::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid #000000;
-    transform: scaleX(0);
-    transition: 0.2s linear;
-}
-
-.navbar .navigasi a:hover::after {
-    transform: scaleX(0.5);
-}
-
-.navbar .nav-logo a {
-    color: 	#000000;
-    margin: 0 0.5rem;
-}
-
-.navbar .nav-logo a:hover {
-    color: #ffffff;
+.navigasi a {
+  font-size: 0.9rem;     /* lebih kecil */
+  font-weight: 500;
+  position: relative;
 }
 
 #hamburger {
-    display: none;
+  display: none;
+  font-size: 1.2rem;     /* kecilkan icon hamburger */
+  cursor: pointer;
 }
 
-/* HERO */
+
+/* Hero */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../gambar/Gemini_Generated_Image_ea8gukea8gukea8g.png'); /* Ganti dengan gambar Anda */
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+              url('../gambar/Gemini_Generated_Image_ea8gukea8gukea8g.png') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+.hero .tagline {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.provitel {
+  width: 200px;
+  max-width: 40vw;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+.btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #0056b3;
+}
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 10vw;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.nvc {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.fade-in-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navigasi {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    width: 220px;
+    padding: 1rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  }
+  .navigasi.active {
     display: flex;
-    justify-content: center;
+  }
+  #hamburger {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .wadah {
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #fff;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0;
-}
-
-.hero .tagline {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.provitel {
-    width: 20vw;
-    margin-bottom: 5vh;
-    border-bottom: 1px solid #ffffff;
-}
-
-.hero-buttons {
-    margin-top: 30px;
-}
-
-.btn {
-    text-decoration: none;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-    margin: 0 10px;
-    transition: background-color 0.3s;
-}
-
-.btn-primary {
-    background-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    border: 2px solid #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-/* --- Konten Utama --- */
-.about-section {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.nvc {
-    padding: 0 10vw;
-}
-
-@media (max-width: 1900px) {
-    html {
-        font-size: 75%;
-    }
-}
-
-@media (max-width: 1400px) {
-    html {
-        font-size: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 62.5%;
-    }
-
-    #hamburger {
-        display: inline-block;
-    }
-
-    .navbar .navigasi {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background-color: white;
-        width: 30rem;
-        height: 100vh;
-        transition: 0.3s;
-    }
-
-    .navbar .navigasi.active {
-        right: 0;
-    }
-
-    .navbar .navigasi a {
-        color: black;
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
-    }
-
-    .navbar .navigasi a::after {
-        transform-origin: 0 0;
-    }
-
-    .navbar .navigasi a:hover::after {
-        transform: scaleX(0.3);
-    }
+  }
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+  }
 }
