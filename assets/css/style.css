@@ -136,39 +136,39 @@ a {
   margin: 1.5rem 0;
   border-bottom: 1px solid #fff;
 }
-.hero-buttons {
+.tombol {
   margin-top: 1.5rem;
 }
-.btn {
+.tbl {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: bold;
   margin: 0 0.5rem;
   transition: all 0.3s ease;
 }
-.btn-primary {
+.tbl-berlangganan {
   background: #007bff;
   color: #fff;
 }
-.btn-primary:hover {
+.tbl-berlangganan:hover {
   background: #0056b3;
 }
-.btn-secondary {
+.tbl-hubungi {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
-.btn-secondary:hover {
+.tbl-hubungi:hover {
   background: #fff;
   color: #333;
 }
 
 /* About Section */
-.about-section {
+.navila {
   padding: 4rem 10vw;
   text-align: center;
 }
-.about-section h2 {
+.navila h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
