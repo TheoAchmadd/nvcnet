@@ -184,14 +184,14 @@ a {
   text-align: center;
 }
 
-.section-title {
+.judul-service {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
   position: relative;
 }
 
-.section-title::after {
+.judul-service::after {
   content: '';
   display: block;
   width: 80px;
@@ -267,20 +267,29 @@ a {
 
 /* ror */
 /* Pricing Section */
-.pricing {
+.homeprice {
   padding: 4rem 10vw;
   text-align: center;
   background: #f9fbfd;
 }
 
-.pricing-container {
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #007bff;
+  margin: 0.5rem auto 0;
+}
+
+.homeprice-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.price-box {
+.homeprice-box {
   background: #fff;
   border-radius: 8px;
   padding: 2rem 1.5rem;
@@ -288,37 +297,37 @@ a {
   transition: all 0.3s ease;
 }
 
-.price-box h3 {
+.homeprice-box h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #007bff;
   margin-bottom: 1rem;
 }
 
-.price-box h4 {
+.homeprice-box h4 {
   font-size: 1.4rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 0.2rem;
 }
 
-.price-box p {
+.homeprice-box p {
   font-size: 0.9rem;
   color: #555;
 }
 
-.price-box hr {
+.homeprice-box hr {
   margin: 1rem 0;
   border: none;
   border-top: 1px solid #ccc;
 }
 
-.price-box ul {
+.homeprice-box ul {
   list-style: none;
   padding: 0;
   margin: 1rem 0 2rem;
 }
-.price-box ul li {
+.homeprice-box ul li {
   margin: 0.4rem 0;
   font-size: 0.9rem;
   color: #555;
@@ -339,28 +348,28 @@ a {
 }
 
 /* Hover Effect untuk Only & High */
-.price-box:hover {
+.homeprice-box:hover {
   background: #007bff;
   color: #fff;
   transform: translateY(-6px);
 }
 
-.price-box:hover h3,
-.price-box:hover h4,
-.price-box:hover p,
-.price-box:hover ul li {
+.homeprice-box:hover h3,
+.homeprice-box:hover h4,
+.homeprice-box:hover p,
+.homeprice-box:hover ul li {
   color: #fff;
 }
 
 /* Featured (Fast) selalu biru */
-.price-box.featured {
+.homeprice-box.featured {
   background: #007bff;
   color: #fff;
 }
-.price-box.featured h3,
-.price-box.featured h4,
-.price-box.featured p,
-.price-box.featured ul li {
+.homeprice-box.featured h3,
+.homeprice-box.featured h4,
+.homeprice-box.featured p,
+.homeprice-box.featured ul li {
   color: #fff;
 }
 
