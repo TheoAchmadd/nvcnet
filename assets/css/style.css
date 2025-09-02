@@ -265,6 +265,106 @@ a {
   transform: translateY(0);
 }
 
+/* ror */
+/* Pricing Section */
+.pricing {
+  padding: 4rem 10vw;
+  text-align: center;
+  background: #f9fbfd;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.price-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.price-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.price-box h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+.price-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.price-box hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.price-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+.price-box ul li {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-price {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background: #007bff;
+  transition: all 0.3s ease;
+}
+.btn-price:hover {
+  background: #0056b3;
+}
+
+/* Hover Effect untuk Only & High */
+.price-box:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+.price-box:hover h3,
+.price-box:hover h4,
+.price-box:hover p,
+.price-box:hover ul li {
+  color: #fff;
+}
+
+/* Featured (Fast) selalu biru */
+.price-box.featured {
+  background: #007bff;
+  color: #fff;
+}
+.price-box.featured h3,
+.price-box.featured h4,
+.price-box.featured p,
+.price-box.featured ul li {
+  color: #fff;
+}
+
+
 /* Responsive */
 @media (max-width: 992px) {
   .navigasi {
