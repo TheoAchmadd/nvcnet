@@ -438,6 +438,71 @@ a {
 /* ABOUT AKHIR */
 
 /* COVERAGE AWAL */
+.coverage {
+  padding: 4rem 10vw;
+  background: #fff;
+  text-align: left;
+}
+
+.coverage h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.coverage p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.coverage-box {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.coverage-box h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.coverage-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn-coverage {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-coverage:hover {
+  background: #0056b3;
+}
 /* COVERAGE AKHIR */
 
 /* CONTACT AWAL */
@@ -582,6 +647,10 @@ a {
   }
   .footer-right a {
     margin: 0 0.5rem;
+  }
+
+  .coverage p {
+    text-align: justify;
   }
 
   .contact-container {
