@@ -503,6 +503,10 @@ a {
 .btn-coverage:hover {
   background: #0056b3;
 }
+
+.kosong {
+  min-height: 50vh;
+}
 /* COVERAGE AKHIR */
 
 /* CONTACT AWAL */
